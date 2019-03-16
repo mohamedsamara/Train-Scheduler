@@ -12,7 +12,96 @@
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container">
+      <div class="jumbotron text-center">
+        <h1 class="display-4">Train Time Schedule</h1>
+        <img src="assets/images/favicon.png" class="train-logo" />
+      </div>
+      <div id="message-alerts"></div>
+
+      <div class="train-box">
+        <div class="row train-header">
+          <h5>Current Train Schedule</h5>
+        </div>
+
+        <div class="train-body">
+          <table class="table table-hover table-responsive-md train-table">
+            <thead>
+              <tr>
+                <th scope="col" class="hidden"></th>
+                <th scope="col">Train Name</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Frequency(min)</th>
+                <th scope="col">Next Arrival</th>
+                <th scope="col">Minutes Away</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Add Train -->
+      <div class="train-box">
+        <div class="row train-header">
+          <h5>Add Train</h5>
+        </div>
+        <div class="train-body">
+          <form id="add-train">
+            <div class="form-group">
+              <label for="trainName">Train Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="trainName"
+                placeholder="Train Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="destination">Destination</label>
+              <input
+                type="text"
+                class="form-control"
+                id="destination"
+                placeholder="Destination"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="firstArrival"
+                >First Train Time(HH:mm - military time)</label
+              >
+              <input
+                class="form-control"
+                type="time"
+                value=""
+                id="firstArrival"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="frequency">Frequency</label>
+              <input
+                type="number"
+                min="0"
+                max="60"
+                value="0"
+                class="form-control"
+                id="frequency"
+                placeholder="10"
+                required
+              />
+            </div>
+            <div class="text-lg-right">
+              <button type="submit" class="btn btn-primary">
+                Add Train
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <!-- js scripts -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>

@@ -6,10 +6,65 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #4aaaa5;
-  border: 2px solid #4aaaa5;
+  background-color: #0a6ed2f0;
+  border: 2px solid #0a6ed2f0;
 }
 
 ::-webkit-scrollbar-track {
   background-color: #ccc;
 }
+
+/* start boostrap overrides */
+.jumbotron {
+  background-color: #0e1f2ff0 !important;
+  color: #fff;
+  padding: 35px !important;
+}
+/* end boostrap overrides */
+
+/* start application styles */
+
+.train-logo {
+  max-width: 200px;
+  max-height: 100px;
+}
+
+.train-table thead th {
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.train-box {
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+.train-box h5 {
+  font-size: 1rem;
+}
+
+.train-box .train-header {
+  background-color: #0a6ed2f0;
+  color: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  margin: 0;
+  align-items: center;
+}
+
+.train-box .train-body {
+  padding: 15px;
+}
+
+.delete {
+  margin: 5px;
+}
+
+.edit,
+.delete {
+  margin: 5px;
+}
+
+.hidden {
+  display: none !important;
+}
+/* end application styles */
