@@ -15,7 +15,7 @@ $(document).ready(function() {
 
   // fetch trains data
   var getTrains = function() {
-    database.ref('/trains/').on(
+    database.ref('/trains').on(
       'value',
       function(snapshot) {
         $('.train-table tbody').empty();
