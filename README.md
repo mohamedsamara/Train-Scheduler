@@ -12,9 +12,8 @@ Create train table & add the fields below
 name -> String
 destination -> String
 first_arrival -> String
-frequency -> String
-arrival -> String
-time_remaining -> String
+frequency -> Number
+date_added -> String
 
 ```
 
