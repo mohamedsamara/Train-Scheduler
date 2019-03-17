@@ -54,9 +54,15 @@ $(document).ready(function() {
   $('#add-train').on('submit', function(e) {
     e.preventDefault();
 
-    var name = $('#trainName').val();
-    var destination = $('#destination').val();
-    var frequency = $('#frequency').val();
+    var name = $('#trainName')
+      .val()
+      .trim();
+    var destination = $('#destination')
+      .val()
+      .trim();
+    var frequency = $('#frequency')
+      .val()
+      .trim();
     var firstArrival = $('#firstArrival')
       .val()
       .trim();
