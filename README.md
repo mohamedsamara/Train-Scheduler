@@ -14,7 +14,6 @@ destination -> String
 first_arrival -> String
 frequency -> Number
 date_added -> String
-
 ```
 
 ## Languages & tools
